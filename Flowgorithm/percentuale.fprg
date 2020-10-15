@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-01 02:39:59 "/>
+        <attribute name="created" value="VXRlbnRlO0RFU0tUT1AtMTNNTlBGMjsyMDIwLTA5LTE4OyIxMTowOToxMiAiOzI4NTg="/>
+        <attribute name="edited" value="VXRlbnRlO0RFU0tUT1AtMTNNTlBGMjsyMDIwLTEwLTAxOyIwMjozOTo1OSAiOzI0OzMwMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totale, prezzo, sconto, prezzoscontato, finito" type="Integer" array="False" size=""/>
+            <assign variable="finito" expression="1"/>
+            <while expression="finito = 1">
+                <output expression="&quot;Inserisci il prezzo&quot;" newline="True"/>
+                <input variable="prezzo"/>
+                <output expression="&quot;Inserisci lo sconto&quot;" newline="True"/>
+                <input variable="sconto"/>
+                <assign variable="prezzoscontato" expression="prezzo*sconto/100"/>
+                <output expression="&quot;Inserisci 0 per sapere il risultato, 1 per continuare&quot;" newline="True"/>
+                <input variable="finito"/>
+            </while>
+            <output expression="&quot;La percentuale &#232;&quot;" newline="True"/>
+            <output expression="prezzoscontato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
